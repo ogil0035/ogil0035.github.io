@@ -1,5 +1,16 @@
 // Additional colours
 $off-white: #feffff;
+$DeepTeal: rgb(5, 102, 141);
+$BrightTeal: rgb(80, 216, 215);
+$Purple: rgb(119, 104, 174);
+$LightGrey: rgb(211, 208, 203);
+$DarkGrey: rgb(57, 62, 65);
+$textbox: rgb(5, 102, 141, 0.8);
 
 // Override bootstrap default
 $body-bg: $off-white;
+
+
+#sidebar-wrapper {
+    background-color: $DeepTeal;
+}

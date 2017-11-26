@@ -1,68 +1,241 @@
 <!DOCTYPE html>
-<html lang="en-CA">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    >
-    <title>Robert McKenney | Demos</title>
+<html lang="en">
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="css/min/main.css"
-    >
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CAN 2 NZ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link rel="stylesheet/scss" type="text/css" href="scss/_custom.scss">
+
   </head>
+
   <body>
-    <article class="container">
-      <div class="row">
-        <div class="col col-sm-7">
-          <h1 class="header-subtle">Profile</h1>
-          <h2 class="display-4">Robert L. McKenney</h2>
-          <p class="text-secondary">
-            Professor, Interactive Media Design<br>
-            School of Media and Design<br>
-            Algonquin College
-          </p>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+          <i class="fa fa-times"></i>
+        </a>
+        <li>
+          <a class="js-scroll-trigger" href="#top">Home</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#services">Steps</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#portfolio">Top Sights</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-center">
+        <h1>From Canada to New Zealand: <br>a guide!</h1>
+        <br>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container text-center">
+        <h2>Are you a Canadian Citizen who wants to travel to New Zealand on a Working Holiday Visa?</h2>
+        <p class="lead">Well, I am. And I found it really dificult trying to find out how to do this! So, I decided to help all you Canadians who (secretly) wish to be a KIWI, even just temporarily. <br> Here’s How!</p>
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Steps -->
+    <section id="services" class="services bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <h2>The Steps</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <img src="img/Steps-01.png">
+                  <h4>
+                    <strong>Step 1</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <img src="img/Steps-02.png">
+                  <h4>
+                    <strong>Step 2</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <img src="img/Steps-03.png">
+                  <h4>
+                    <strong>Step 3</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <img src="img/Steps-04.png">
+                  <h4>
+                    <strong>Step 4</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+          </div>
+          <!-- /.col-lg-10 -->
         </div>
-        <div class="col-4 col-sm-5  col-xl-4">
-          <img
-            src="img/rlm-headshot.png"
-            alt="Robert McKenney smiling"
-            class="img-fluid rounded-circle mb-3"
-          >
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h1>Vertically Centered Text</h1>
+      </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>Our Work</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+            <a href="#" class="btn btn-dark">View More Items</a>
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>Or for the truly ambitious:</h3>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Michelle Ogilby</strong>
+            </h4>
+            <p>1385 Woodroffe Avenue
+              <br>Nepean, ON K2G1V8</p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                (613) 240-5577</li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:name@example.com">ogil0035@algonquinlive.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Michelle Ogilby 2017</p>
+          </div>
         </div>
       </div>
-      <p class="lead mt-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
-      </p>
-      <button
-        type="button"
-        class="btn btn-primary float-right"
-      >Call to action!</button>
-    </article>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-      crossorigin="anonymous">
-    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+
   </body>
+
 </html>
