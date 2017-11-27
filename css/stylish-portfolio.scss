@@ -4,6 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
+// Additional colours
+$off-white: #feffff;
+$DeepTeal: rgb(5, 102, 141);
+$BrightTeal: rgb(80, 216, 215);
+$Purple: rgb(119, 104, 174);
+$LightGrey: rgb(211, 208, 203);
+$DarkGrey: rgb(57, 62, 65);
+$textbox: rgb(5, 102, 141, 0.8);
+
 /* Global Styles */
 
 html, body {
@@ -13,6 +22,8 @@ html, body {
 
 body {
   font-family: 'Amatic SC', 'Josefin Slab';
+    color: rgb(57, 62, 65);
+    background-color: rgb(211, 208, 203)!important;
 }
 
 p {
@@ -21,12 +32,36 @@ p {
 
 h2 {
     font-size: 40px;
+    color: rgb(119, 104, 174);
+}
+
+.bg-primary {
+    background-color: rgb(5, 104, 141)!important;
+}
+
+a {
+    color: rgb(80, 216, 215);
+    font-size: 20px;
+}
+a:hover {
+    color: rgb(211, 208, 203);
+    font-size: 20px;
+}
+
+h5 {
+    color: rgb(119, 104, 174);
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 30px;
 }
 
 .text-vertical-center {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+    background-color: rgba(5, 102, 141, 0.8);
 }
 
 .text-vertical-center h1 {
@@ -34,6 +69,19 @@ h2 {
   font-weight: 700;
   margin: 0;
   padding: 0;
+    color: rgb(80, 216, 215);
+}
+
+.fa {
+    color: rgb(80, 216, 215);     
+}
+
+.fa-facebook:hover {
+    color: rgb(211, 208, 203);     
+}
+
+.fa-twitter:hover {
+    color: rgb(211, 208, 203);     
 }
 
 /* Custom Horizontal Rule */
@@ -58,6 +106,18 @@ hr.small {
   -o-transition: all .4s ease 0s;
   transition: all .4s ease 0s;
   transform: translateX(250px);
+    background-color: rgb(5, 102, 141);
+}
+
+.js-scroll-trigger {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(211, 208, 203)!important;
+}
+
+.js-scroll-trigger:hover {
+    font-size: 30px;
 }
 
 .sidebar-nav {
@@ -141,6 +201,8 @@ hr.small {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 180px;
 }
 
 /* About */
@@ -154,6 +216,11 @@ hr.small {
 
 .services {
   padding: 50px 0;
+    background-color: rgb(5, 104, 141);
+}
+
+.steps {
+    color: #fff;
 }
 
 .service-item {
@@ -206,27 +273,13 @@ hr.small {
 }
 
 
-/* Map */
-
-.map {
-  height: 500px;
-}
-
-@media(max-width:768px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
-
 /* Footer */
 
 footer {
   padding: 100px 0;
+    background-color: rgb(119, 104, 174)!important;
+    color: rgb(211, 208, 203);
+    font-size: 25px;
 }
 
 #to-top {
@@ -236,4 +289,99 @@ footer {
   bottom: 5px;
   display: none;
   padding: 15px 20px;
+}
+
+.text-muted {
+    color: rgb(202, 192, 237)!important;
+}
+
+.email {
+    font-size: 25px;
+}
+
+.email:hover {
+    font-size: 25px;
+}
+
+.list-unstyled {
+    color: rgb(80, 216, 215);
+}
+
+/* IMG's */
+
+.gbr {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url(../img/gbr.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fiji {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url(../img/fiji.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pacificisland {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url(../img/pacificisland.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.requirements {
+    width: 50%;
+    text-align: center;
+    float: left;
+    background-color: rgb(80, 216, 215)!important;
+    color: rgb(5, 102, 141);
+    padding: 5px;
+}
+
+.banks {
+    width: 50%;
+    text-align: center;
+    float: right;
+    background-color: rgb(80, 216, 215)!important;
+     color: rgb(5, 102, 141);
+    padding: 5px;
+}
+
+.flights {
+    width: 50%;
+    text-align: center;
+    float: left;
+    background-color: rgb(80, 216, 215)!important;
+     color: rgb(5, 102, 141);
+    padding: 5px;
+}
+
+.stays {
+    width: 50%;
+    text-align: center;
+    float: right;
+    background-color: rgb(80, 216, 215)!important;
+     color: rgb(5, 102, 141);
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 25px;
 }
