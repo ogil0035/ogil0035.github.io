@@ -5,13 +5,33 @@
  */
 
 // Additional colours
-$off-white: #feffff;
-$DeepTeal: rgb(5, 102, 141);
-$BrightTeal: rgb(80, 216, 215);
-$Purple: rgb(119, 104, 174);
-$LightGrey: rgb(211, 208, 203);
-$DarkGrey: rgb(57, 62, 65);
+$white: #ffffff;
+$deepTeal: rgb(5, 102, 141);
+$brightTeal: rgb(80, 216, 215);
+$purple: rgb(119, 104, 174);
+$lightGrey: rgb(211, 208, 203);
+$darkGrey: rgb(57, 62, 65);
 $textbox: rgba(5, 102, 141, 0.8);
+$lightPurple: rgb(202, 192, 237);
+$hover: rgba(222, 222, 222, 0.2);
+$nav: #999;
+
+//Anything that has none IE text decoration
+$no: none;
+
+//transitions
+$transition: all .4s ease 0s;
+
+//fonts and sizes
+$ama: 'Amatic SC';
+$jos: 'Josefin Slab';
+$p: 25px;
+$p2: 25px;
+$h1: 150px;
+$h2: 75px;
+$h3: 40px;
+$h4: 40px;
+$h5: 50px;
 
 /* Global Styles */
 
@@ -21,67 +41,72 @@ html, body {
 }
 
 body {
-  font-family: 'Amatic SC', 'Josefin Slab';
-    color: rgb(57, 62, 65);
-    background-color: rgb(211, 208, 203)!important;
+  font-family: $ama;
+    color: $darkGrey;
+    background-color: $lightGrey;
 }
 
 p {
-    font-family: 'Josefin Slab';
+    font-family: $jos;
+    font-size: $p!important;
+}
+
+.text-vertical-center h1 {
+  font-size: $h1;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: $brightTeal;
 }
 
 h2 {
-    font-size: 40px;
-    color: rgb(119, 104, 174);
+    font-size: $h2;
+    color: $purple;
 }
 
-.bg-primary {
-    background-color: rgb(5, 104, 141)!important;
-}
-
-a {
-    color: rgb(80, 216, 215);
-    font-size: 20px;
-}
-a:hover {
-    color: rgb(211, 208, 203);
-    font-size: 20px;
-}
-
-h5 {
-    color: rgb(119, 104, 174);
-    font-size: 40px;
+h3 {
+    font-size: $h3;
 }
 
 h4 {
-    font-size: 30px;
+    font-size: $h4;
+}
+
+h5 {
+    color: $purple;
+    font-size: $h5;
+}
+
+.bg-primary {
+    background-color: $deepTeal!important;
+}
+
+a {
+    color: $brightTeal;
+    font-size: 20px;
+}
+a:hover {
+    color: $lightGrey;
+    font-size: 20px;
 }
 
 .text-vertical-center {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-    background-color: rgba(5, 102, 141, 0.8);
-}
-
-.text-vertical-center h1 {
-  font-size: 110px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-    color: rgb(80, 216, 215);
+    background-color: $textbox;
 }
 
 .fa {
-    color: rgb(80, 216, 215);     
+    color: $brightTeal;     
 }
 
 .fa-facebook:hover {
-    color: rgb(211, 208, 203);     
+    color: $lightGrey;     
 }
 
 .fa-twitter:hover {
-    color: rgb(211, 208, 203);     
+    color: $lightGrey;     
 }
 
 /* Custom Horizontal Rule */
@@ -89,7 +114,6 @@ h4 {
 hr.small {
   max-width: 100px;
 }
-
 
 /* Side Menu */
 
@@ -100,24 +124,24 @@ hr.small {
   overflow-y: auto;
   width: 250px;
   height: 100%;
-  -webkit-transition: all .4s ease 0s;
-  -moz-transition: all .4s ease 0s;
-  -ms-transition: all .4s ease 0s;
-  -o-transition: all .4s ease 0s;
-  transition: all .4s ease 0s;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
   transform: translateX(250px);
-    background-color: rgb(5, 102, 141);
+    background-color: $deepTeal;
 }
 
 .js-scroll-trigger {
     font-size: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: rgb(211, 208, 203)!important;
-}
-
-.js-scroll-trigger:hover {
-    font-size: 30px;
+    color: $lightGrey!important;
+    &:hover {
+        font-size: 35px;
+        background-color: $hover!important;
+    }
 }
 
 .sidebar-nav {
@@ -126,7 +150,7 @@ hr.small {
   width: 250px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: $no;
 }
 
 .sidebar-nav li {
@@ -136,18 +160,12 @@ hr.small {
 
 .sidebar-nav li a {
   display: block;
-  text-decoration: none;
-  color: #999;
-}
-
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, .2);
+  text-decoration: $no;
+  color: $nav;
 }
 
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
-  text-decoration: none;
+  text-decoration: $no;
 }
 
 .sidebar-nav>.sidebar-brand {
@@ -157,12 +175,12 @@ hr.small {
 }
 
 .sidebar-nav>.sidebar-brand a {
-  color: #999;
+  color: $nav;
 }
 
 .sidebar-nav>.sidebar-brand a:hover {
-  color: #fff;
-  background: none;
+  color: $white;
+  background: $no;
 }
 
 #menu-toggle {
@@ -175,34 +193,17 @@ hr.small {
 #sidebar-wrapper.active {
   right: 250px;
   width: 250px;
-  -webkit-transition: all .4s ease 0s;
-  -moz-transition: all .4s ease 0s;
-  -ms-transition: all .4s ease 0s;
-  -o-transition: all .4s ease 0s;
-  transition: all .4s ease 0s;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
 }
 
 .toggle {
   font-size: 1em;
   margin: 5px 5px 0 0;
   padding: 15px 20px;
-}
-
-
-/* Header */
-
-.header {
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 100%;
-  background: url(../img/bg.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    padding-top: 180px;
-    padding-bottom: 180px;
 }
 
 /* About */
@@ -216,32 +217,16 @@ hr.small {
 
 .services {
   padding: 50px 0;
-    background-color: rgb(5, 104, 141);
+    background-color: $deepTeal;
 }
 
 .steps {
-    color: #fff;
+    color: $white;
 }
 
 .service-item {
   margin-bottom: 30px;
 }
-
-
-/* Callout */
-
-.callout {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-  background: url(../img/callout.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 
 /* Portfolio */
 
@@ -277,8 +262,8 @@ hr.small {
 
 footer {
   padding: 100px 0;
-    background-color: rgb(119, 104, 174)!important;
-    color: rgb(211, 208, 203);
+    background-color: $purple;
+    color: $lightGrey;
     font-size: 25px;
 }
 
@@ -287,12 +272,12 @@ footer {
   position: fixed;
   right: 5px;
   bottom: 5px;
-  display: none;
+  display: $no;
   padding: 15px 20px;
 }
 
 .text-muted {
-    color: rgb(202, 192, 237)!important;
+    color: $lightPurple!important;
 }
 
 .email {
@@ -304,53 +289,17 @@ footer {
 }
 
 .list-unstyled {
-    color: rgb(80, 216, 215);
+    color: $brightTeal;
 }
 
-/* IMG's */
-
-.gbr {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-  background: url(../img/gbr.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.fiji {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-  background: url(../img/fiji.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.pacificisland {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-  background: url(../img/pacificisland.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+/* ul */
 
 .requirements {
     width: 50%;
     text-align: center;
     float: left;
-    background-color: rgb(80, 216, 215)!important;
-    color: rgb(5, 102, 141);
+    background-color: $brightTeal;
+    color: $deepTeal;
     padding: 5px;
 }
 
@@ -358,8 +307,8 @@ footer {
     width: 50%;
     text-align: center;
     float: right;
-    background-color: rgb(80, 216, 215)!important;
-     color: rgb(5, 102, 141);
+    background-color: $brightTeal;
+     color: $deepTeal;
     padding: 5px;
 }
 
@@ -367,8 +316,8 @@ footer {
     width: 50%;
     text-align: center;
     float: left;
-    background-color: rgb(80, 216, 215)!important;
-     color: rgb(5, 102, 141);
+    background-color: $brightTeal;
+    color: $deepTeal;
     padding: 5px;
 }
 
@@ -376,12 +325,20 @@ footer {
     width: 50%;
     text-align: center;
     float: right;
-    background-color: rgb(80, 216, 215)!important;
-     color: rgb(5, 102, 141);
+    background-color: $brightTeal;
+     color: $deepTeal;
     padding: 5px;
 }
 
+.stays p, .flights p {
+    font-size: $p2!important;
+}
+
 ul {
-    list-style-type: none;
+    list-style-type: $no;
     font-size: 25px;
+}
+
+.pacisl p, .aus p {
+    color: $brightTeal;
 }
